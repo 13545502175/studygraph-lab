@@ -1,5 +1,7 @@
 # StudyGraph Lab
 
+> 用知识图谱生成可解释的复习优先级。
+
 把知识点之间的先修关系变成一份可解释的复习计划。适合学生做课程复习，也适合作为图机器学习入门项目。
 
 ## 5 分钟运行
@@ -24,3 +26,11 @@ python -m pytest -q
 ```
 
 MIT License。欢迎提交新的学科示例和评分策略。
+
+## Python API
+
+```python
+from studygraph import load_nodes, build_graph, recommend
+nodes = load_nodes("examples/math.json")
+plan = recommend(nodes, build_graph(nodes), limit=3)
+```
