@@ -1,0 +1,7 @@
+[project]
+name = "studygraph-lab"
+version = "0.1.0"
+description = "Explainable review priorities from prerequisite graphs"
+requires-python = ">=3.10"
+[project.scripts]
+studygraph = "studygraph.cli:main"
